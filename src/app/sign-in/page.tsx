@@ -1,5 +1,4 @@
 import { Command } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
 import { UserAuthForm } from "./components/user-auth-form";
@@ -7,23 +6,7 @@ import { UserAuthForm } from "./components/user-auth-form";
 export default function SignInPage() {
   return (
     <>
-      <div className="md:hidden">
-        <Image
-          src="/examples/authentication-light.png"
-          width={1280}
-          height={843}
-          alt="Authentication"
-          className="block dark:hidden"
-        />
-        <Image
-          src="/examples/authentication-dark.png"
-          width={1280}
-          height={843}
-          alt="Authentication"
-          className="hidden dark:block"
-        />
-      </div>
-      <div className="container relative hidden h-svh flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0">
+      <div className="container relative grid h-svh flex-col items-center justify-center lg:max-w-none lg:grid-cols-2 lg:px-0">
         <div className="relative hidden h-full justify-center flex-col bg-muted p-10 text-white lg:flex dark:border-r">
           <div className="absolute inset-0 bg-zinc-900" />
           <div className="relative z-20 flex justify-center items-center text-lg font-medium gap-2">
